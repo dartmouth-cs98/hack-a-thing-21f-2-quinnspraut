@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenCV.js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+  <!-- BEGIN HTML -->
+  This is a test!
+  <div class="modal"></div>
+
+  <!-- END HTML -->
+  <!-- BEGIN JAVASCRIPT -->
+
+  <script type="text/javascript">
+
+    function onOpenCvReady() {
+      document.body.classList.remove('loading');
+    }
+
+  </script>
+  <!-- Load opencv library async due to large file size -->
+  <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+
+  <!-- END JAVASCRIPT -->
+</body>
+</html>
