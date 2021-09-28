@@ -23,20 +23,80 @@ body.loading .modal {
   display: block;
 }
 
-body {
-  background-color: black;
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body, h1, h3 {
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
 
+img {
+  display: none;
+}
+
+
+img[src] {
+ display: block;
+}
+
 #content {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(#5f0a87, #a4508b);
 }
 
-.hidden {
-  opacity: 0;
+#header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  
+  color: white;
+  margin: 20px 0px;
+}
+
+.footer-btn {
+  text-decoration: none;
+  border: none;
+  background-color: darkgray;
+  color: lightgray;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, .1);
+  margin: 10px;
+  cursor: default;
   pointer-events: none;
+  transition: .3s ease-out;
+}
+
+.enabled {
+  background-color: #5f0a87;
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-container {
+  width: 40vw;
+  height: auto;
+}
+
+#file-upload, #buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
 }

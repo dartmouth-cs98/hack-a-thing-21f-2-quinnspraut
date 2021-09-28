@@ -14,6 +14,9 @@ imgElement.onload = function() {
   let image = cv.imread(imgElement);
   cv.imshow('imageCanvas', image);
   image.delete();
+
+  document.getElementById('circlesButton').classList.add('enabled');
+  document.getElementById('downloadButton').classList.remove('enabled');
 };
 
 document.getElementById('circlesButton').onclick = function() {
@@ -48,6 +51,7 @@ document.getElementById('circlesButton').onclick = function() {
   // reenable page
   this.disabled = false;
   document.body.classList.remove('loading');
+  document.getElementById('downloadButton').classList.add('enabled');
 };
 
 let debounceDownload = false;
