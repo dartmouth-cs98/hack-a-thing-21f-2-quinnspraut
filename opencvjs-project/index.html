@@ -7,6 +7,7 @@
 <body class="loading">
   <!-- BEGIN HTML -->
   <div class="modal"></div>
+  <button id="switch-btn" class="footer-btn enabled">Face Detector</button>
   <div id="content" class="hidden">
     <div id="header">
       <h1>Circle Detector</h1>
@@ -22,6 +23,23 @@
     <div id="buttons">
       <button type="button" id="circlesButton" class="footer-btn">Detect Circles</button>
       <a href="#" id="downloadButton" class="footer-btn">Download Image</a>
+    </div>
+  </div>
+  <div id="face-content" class="hidden">
+    <div id="face-header">
+      <h1>Face Detector</h1>
+      <h3><i>a demo of OpenCV.js</i></h3>
+    </div>
+    <div id="face-file-upload">
+      <input type="file" id="face-fileInput" name="file" style="color:white;" />
+    </div>
+    <div id="face-images">
+      <img class="image-container" id="face-imageSrc" />
+      <canvas class="image-continer" id="face-imageCanvas"></canvas>
+    </div>
+    <div id="face-buttons">
+      <button type="button" id="faceButton" class="footer-btn">Detect Face</button>
+      <a href="#" id="face-downloadButton" class="footer-btn">Download Image</a>
     </div>
   </div>
 

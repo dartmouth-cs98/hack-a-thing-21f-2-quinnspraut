@@ -2,7 +2,7 @@
 
 ## What you built? 
 
-I used an open-source JavaScript library called OpenCV to get a better understanding of computer vision. Simultaneously, I also integrated image uploading and downloading.
+I used an open-source JavaScript library called OpenCV to get a better understanding of computer vision. Simultaneously, I also learned about image uploading and downloading.
 
 I built a basic circle detector. A user uploads an image from their computer. The site then detects any circles in the uploaded picture, outlines them, then places a drawn-on image next to the original. The user then has the option to download the new image.
 
