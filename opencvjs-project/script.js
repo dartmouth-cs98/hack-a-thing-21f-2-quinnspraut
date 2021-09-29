@@ -112,10 +112,8 @@ document.getElementById('faceButton').onclick = function() {
   let faceCascade = new cv.CascadeClassifier();
   let eyeCascade = new cv.CascadeClassifier();
   // load pre-trained classifiers
-  console.log('trying frontalface');
-  faceCascade.load('/mnt/c/Users/qspra/Desktop/Ubuntu/hack-a-thing-21f-2-quinnspraut/opencvjs-project/haarcascade_frontalface_default.xml');
-  console.log('trying eye');
-  eyeCascade.load('/mnt/c/Users/qspra/Desktop/Ubuntu/hack-a-thing-21f-2-quinnspraut/opencvjs-project/haarcascade_eye.xml');
+  faceCascade.load('./haarcascade_frontalface_default.xml');
+  eyeCascade.load('./haarcascade_eye.xml');
   // detect faces
   let msize = new cv.Size(0, 0);
   faceCascade.detectMultiScale(gray, faces, 1.1, 3, 0, msize, msize);
